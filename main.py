@@ -3,9 +3,9 @@ def get_words_number(text: str) -> int:
 
 
 def get_characters_count(text: str) -> dict[str,int]:
-    t_list = list(text.lower())
+    t_lower = text.lower()
     ch_count = {}
-    for t in t_list:
+    for t in t_lower:
         if not t in ch_count:
             ch_count[t] = 0
         ch_count[t] +=1
